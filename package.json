@@ -1,0 +1,32 @@
+{
+  "name": "@aeoess/storage-sqlite",
+  "version": "0.1.0",
+  "description": "SQLite persistence backend for Agent Passport System — single trust domain, WAL mode, atomic transactions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "npx tsx --test tests/sqlite-backend.test.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["agent-passport", "aeoess", "sqlite", "storage", "governance"],
+  "author": "Tymofii Pidlisnyi <tima@aeoess.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aeoess/agent-passport-storage-sqlite"
+  },
+  "peerDependencies": {
+    "agent-passport-system": ">=1.24.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "agent-passport-system": "^1.24.0",
+    "typescript": "^5.4.0",
+    "tsx": "^4.0.0"
+  }
+}
